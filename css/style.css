@@ -1,0 +1,127 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/**********************************************
+                Global styles
+**********************************************/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+.clock-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 1px 1px #333;
+  text-align: center;
+  color: #fff;
+}
+
+.clock {
+  font-size: 40px;
+}
+
+.clock span {
+  display: inline-block;
+  text-align: left;
+}
+
+.clock span.bigger {
+  min-width: 100px;
+  text-align: center;
+}
+
+.clock span.little {
+  width: 40px;
+  font-size: 30px;
+}
+
+#seasonSpan {
+  width: 100px;
+}
+
+.user {
+  font-size: 1rem;
+}
+
+#focus-cont {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+input.focus {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/**************************************
+            @media Queries
+**************************************/
+@media all and (min-width: 576px) {
+  .clock {
+    font-size: 80px;
+  }
+
+  .clock span.little {
+    width: 60px;
+    font-size: 40px;
+  }
+
+  .user {
+    font-size: 1.8rem;
+  }
+
+  #focus-cont {
+    font-size: 1.8rem
+  }
+
+  input.focus {
+    height: 50px;
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .clock {
+    font-size: 150px;
+  }
+
+  .clock span.little {
+    width: 80px;
+    font-size: 50px;
+  }
+
+  .user {
+    font-size: 2.8rem;
+  }
+
+  #focus-cont {
+    font-size: 2rem
+  }
+
+  input.focus {
+    height: 60px;
+    font-size: 3rem;
+  }
+}
