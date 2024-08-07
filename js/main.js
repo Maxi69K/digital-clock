@@ -161,19 +161,19 @@ function showTime() {
             const userName = 'Maxi';
             digitalClock.user.innerHTML = userName;
             if (h < 9) {
-                bg = `url(url(https://source.unsplash.com/random?morning)`;
+                bg = `url(url(https://unsplash.it/1920/1080?random?morning)`;
                 digitalClock.user.innerHTML = `Good morning ${userName}`;
             }
             if (h >= 9) {
-                bg = `url(https://source.unsplash.com/random?nature)`;
+                bg = `url(https://unsplash.it/1920/1080?random?nature)`;
                 digitalClock.user.innerHTML = `Good day ${userName}`;
             }
             if (h >= 17) {
-                bg = `url(https://source.unsplash.com/random?sunset)`;
+                bg = `url(https://unsplash.it/1920/1080?random?sunset)`;
                 digitalClock.user.innerHTML = `Good afternoon ${userName}`;
             }
             if (h >= 20) {
-                bg = `url(https://source.unsplash.com/random?night)`;
+                bg = `url(https://unsplash.it/1920/1080?random?night)`;
                 digitalClock.user.innerHTML = `Good night ${userName}`;
             }
             digitalClock.myBody.style.background = `${bg} center/cover`;
